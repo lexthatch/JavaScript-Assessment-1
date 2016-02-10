@@ -1,4 +1,4 @@
-//1. What is the lenth of the following contacts array?
+//1. What is the length of the following contacts array?
 
 var contacts = [];
 
@@ -36,6 +36,15 @@ var stefan = {
 	title: 'mentor'
 };
 
+contacts.push(jake,matt,chris,tony,andrew,stefan);
+console.log(contacts);
 
 //3. Woops after adding all of those people to the same contacts list you realized you need a list just the mentors. Create a new variable named mentors populate it using contacts array. 
-
+var mentors = [];
+for var i = 0; i < contacts.length; i++){
+    if (contacts[i].title == 'mentor'){
+        mentors.push(contacts[i]);
+    }
+    
+}
+console.log(mentors);
